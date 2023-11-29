@@ -24,10 +24,10 @@ TF_coords_dir = PyFECONS_MAIN + "/Geometries/data/geometry_data/toroidal"
 
 #Runs full magnetic field code for Toroidal geometry
 print("Generating sampling grid") 
-#grid_gen("Torus",points_list_path)
+grid_gen("Torus",points_list_path)
 print("PF FIELD CALCULATING")
-#loop_field("Torus",coil_data_path)
+loop_field("Torus",coil_data_path)
 print("TF FIELD CALCULATING") 
-#TF_field(12,TF_datafile_path,TF_coords_dir)
+TF_field(12,TF_datafile_path,TF_coords_dir)
 print("Total field and mapping") 
 field_map("Torus",coil_data_path,TF_coords_dir)
